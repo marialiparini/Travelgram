@@ -25,3 +25,26 @@ body {
   background-color: var(--background-color);
   color: var(--text-color-secondary);
 }
+
+a {
+  text-decoration: none;
+  /* Pega a cor herdada do body */
+  color: inherit;
+}
+
+a:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+.container {
+  /* padding-inline aplica no eixo x e bloqueia o eixo y */
+  padding-inline: 32px;
+  max-width: 1280px;
+  /* Aplica somente nas laterais */
+  margin-inline: auto;
+}
+
+.bg-surface-color {
+  background-color: var(--surface-color);
+}
